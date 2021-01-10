@@ -1,11 +1,12 @@
 const CSSPlugin = require('mini-css-extract-plugin');
 const HTMLPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   mode: 'development',
   entry: ['./src/js/index.js'],
   output: {
-    path: __dirname + 'dist',
+    path: path.join(__dirname, './dist'),
     filename: '[name].js',
   },
   module: {
@@ -27,7 +28,7 @@ module.exports = {
     new CSSPlugin(),
   ],
   devServer: {
-    contentBase: './src',
+    contentBase: './dist',
     hot: true,
     compress: true,
     port: 3000,

@@ -1,2 +1,248 @@
 @import 'reset';
+@import 'title';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body {
+  padding: 0 14rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 14rem;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+
+    ul {
+      display: flex;
+      text-transform: uppercase;
+
+      &:first-child {
+        li {
+          margin-right: 3rem;
+          @extend %miniTitle;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  margin: 52px 0 8rem;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1473&q=80');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+
+  h4 {
+    @extend %miniTitle;
+    color: white;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    color: white;
+    line-height: 1.3;
+  }
+
+  a {
+    transition: all .3s linear;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    @extend %miniTitle;
+
+    &:hover {
+      transition: 0.5s;
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.under-hero {
+  height: 60vh;
+  display: flex;
+  margin-bottom: 8rem;
+
+  img, div {
+    width: 50%;
+    background-size: cover;
+  }
+
+  .under-hero__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3ede8;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        @extend %miniTitle;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        border: 1px solid black;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: black;
+        @extend %miniTitle;
+        transition: all 0.5s linear;
+
+        &:hover {
+          transition: all 0.3s linear;
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+
+.blog {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 45vh);
+  margin-bottom: 8rem;
+
+  .blog__post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .post__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3ede8;
+
+      span {
+        @extend %miniTitle;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-family: 'Montserrat';
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: all 0.3s linear;
+        color: black;
+        @extend %miniTitle;
+        border: 1px solid black;
+
+        &:hover {
+          transition: all 0.3s linear;
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      img { order: 1 }
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 41rem);
+
+  .gallery__poster {
+    height: 100%;
+    cursor: pointer;
+    img {
+      max-width: 100%;
+      height: 100%;
+      transition: opacity 0.3s linear;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 10rem;
+  background-color: #f3ede8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 6.5rem 0;
+
+  .footer__column {
+    .column__title {
+      margin-bottom: 1rem;
+      @extend %miniTitle;
+      border-bottom: 0.1rem solid grey;
+      padding: 0 0 0.3rem 0;
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    @extend %miniTitle;
+  }
+}
