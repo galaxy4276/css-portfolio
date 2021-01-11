@@ -1,0 +1,87 @@
+@import 'reset';
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+body {
+  padding-top: 7rem;
+  height: 100vh;
+  background-color: $bg;
+  display: grid;
+  grid-template-columns: 1.5fr 1.9fr 1.5fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 0.1rem;
+
+  & > * {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bg;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+
+  .menu {
+    grid-column-start: -2;
+  }
+
+  .center-image {
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    background-image: url("https://images.unsplash.com/photo-1583309219338-a582f1f9ca6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .number__row {
+    background-color: $bg;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+    height: 100%;
+    align-items: stretch;
+
+    .number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      cursor: pointer;
+      transition: color 0.3s linear, background-color 0.3s linear;
+
+      &:hover {
+        background-color: $bg;
+        color: white;
+      }
+    }
+  }
+
+  .scrolling__text {
+    grid-column-start: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    span {
+      animation: scrollText 3s linear infinite forwards;
+    }
+  }
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-15rem);
+  }
+  50% {
+    transform: translateX(15rem);
+  }
+  100% {
+    transform: translateX(-15rem);
+  }
+}
