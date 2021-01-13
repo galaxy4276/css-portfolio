@@ -1,0 +1,104 @@
+html {
+  font-size: 10px;
+}
+
+
+html, body {
+  background-color: #dde1d4;
+}
+
+main {
+  max-width: 61rem;
+  margin: auto;
+  margin-top: 5rem;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 3fr 3fr;
+
+  .top__box {
+    background-color: black;
+    margin: 1rem;
+    height: 10rem;
+    display: flex;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      width: 100%;
+      align-items: center;
+      margin-top: 3rem;
+      padding-inline-start: 0;
+      overflow: hidden;
+
+      .ul__first {
+        display: flex;
+      }
+
+      li {
+        color: white;
+        list-style: none;
+        text-align: left;
+        width: 17rem;
+        font-size: 1.4rem;
+        padding: 0 1rem 0 1rem;
+      }
+    }
+  }
+
+  .middle__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 1rem 1rem 1rem;
+
+    .box {
+      display: flex;
+      align-items: flex-end;
+      background-color: #f14011;
+      height: 100%;
+      width: 100%;
+
+      p {
+        font-size: 15rem;
+        font-weight: 800;
+        margin: 0;
+        height: 17.5rem;
+      }
+
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .footer__box {
+    background-color: #f14011;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .religion {
+      display: flex;
+      justify-content: center;
+
+      p {
+        font-size: 16rem;
+        font-weight: 800;
+        color: black;
+        padding: 0;
+      }
+    }
+    p {
+      margin: 0;
+    }
+
+    p {
+      color: white;
+      font-size: 3rem;
+      font-weight: 500;
+      padding-left: 2rem;
+    }
+  }
+}
