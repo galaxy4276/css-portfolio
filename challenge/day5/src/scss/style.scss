@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(50vh, 1fr));
+
+  .row:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    .box:nth-child(1) { background-color: #bfbda7; }
+    .box:nth-child(2) {
+      background-image: url('https://images.unsplash.com/photo-1610594688839-775fb19daa8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .box:nth-child(3) { background-color: #fe4714; }
+    .box:nth-child(4) {
+      background-image: url('https://images.unsplash.com/photo-1610642433569-fb4f62b3795f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .box:nth-child(5) { background-color: #847e96; }
+    .box:last-child { background-color: #d0ff71; }
+  }
+
+  .row:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 100%;
+    .box:first-child { background-color: #993333; }
+    .box:nth-child(2) { background-color: #3aaafa; }
+    .box:nth-child(3) {
+      background-image: url('https://images.unsplash.com/photo-1610574495994-8e558378d084?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .box:nth-child(4) { background-color: #41907a; }
+    .box:nth-child(5) {
+      background-image: url('https://images.unsplash.com/photo-1610642779504-0bb8a0e5763f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .box:last-child { background-color: #e3c4e5; }
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: .5rem;
+  }
+}
