@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1606fd27-30e8-4bc4-8c5b-045932f22441" name="디폴트 변경 목록" comment="">
+    <list default="true" id="8b49ceca-68de-4221-8b57-7bbde73f9e23" name="디폴트 변경 목록" comment="">
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../game-box/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../game-box/src/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../game-box/src/js/index.js" beforeDir="false" />
@@ -31,7 +31,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProjectId" id="1n59OcSK0RQdINxqo4NF37sn7Lf" />
+  <component name="ProjectId" id="1nDKzJ3PYuOOyovpPMXMKYDHMSu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -43,22 +43,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day5" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="1606fd27-30e8-4bc4-8c5b-045932f22441" name="디폴트 변경 목록" comment="" />
-      <created>1610669053291</created>
+      <changelist id="8b49ceca-68de-4221-8b57-7bbde73f9e23" name="디폴트 변경 목록" comment="" />
+      <created>1610919481364</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1610669053291</updated>
-      <workItem from="1610669054474" duration="6936000" />
-      <workItem from="1610690454304" duration="1690000" />
-      <workItem from="1610692172418" duration="9000" />
-      <workItem from="1610919491939" duration="29000" />
+      <updated>1610919481364</updated>
+      <workItem from="1610919482550" duration="8994000" />
     </task>
     <servers />
   </component>
@@ -75,6 +72,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
